@@ -13,8 +13,8 @@ public class Client {
         String password = "";
 
         String toAddress = "";
-        String subject = "Волк";
-        String bodyText = "Тут есть волк";
+        String subject = "Обои";
+        String bodyText = "Прикрепил картинку, которую ты давно просил.";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -39,7 +39,7 @@ public class Client {
             MimeBodyPart textPart = new MimeBodyPart();
             textPart.setText(bodyText);
 
-            String imagePath = "src\\lab3\\wolf.png";
+            String imagePath = "src\\lab3\\ayaya.png";
 
             MimeBodyPart imagePart = new MimeBodyPart();
             imagePart.attachFile(imagePath);
